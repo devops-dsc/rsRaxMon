@@ -28,8 +28,8 @@ rsRaxMon FileSystem
                     return new AlarmStatus(WARNING, 'Less than 10% free space left.');
                 }"
     Ensure = "Absent"
-    MonitoringToken = $Monitoring_Token
-    MonitoringID = $Monitoring_ID
+    MonitoringToken = $MonitoringToken
+    MonitoringID = $MonitoringID
 }
 </pre>
 <pre>
