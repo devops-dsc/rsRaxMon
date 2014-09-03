@@ -27,7 +27,7 @@ rsRaxMon FileSystem
                 if (percentage(metric['used'], metric['total']) > 90) {
                     return new AlarmStatus(WARNING, 'Less than 10% free space left.');
                 }"
-    Ensure = "Absent"
+    Ensure = "Present"
     Monitoring_Token = $MonitoringToken
     Monitoring_ID = $MonitoringID
 }
