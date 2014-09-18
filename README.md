@@ -1,6 +1,6 @@
 rsRaxMon
 ========
-<pre>
+```PoSh
 rsRaxMon FileSystem
 {
     Type = "agent.filesystem"
@@ -31,8 +31,8 @@ rsRaxMon FileSystem
     Monitoring_Token = $MonitoringToken
     Monitoring_ID = $MonitoringID
 }
-</pre>
-<pre>
+```
+```PoSh
 rsRaxMon Http
 {
     Type = "remote.http"
@@ -47,8 +47,8 @@ rsRaxMon Http
     Alarm1_Plan_ID = "npTechnicalContactsEmail"
     Ensure = "Present"
 }
-</pre>
-<pre>
+```
+```PoSh
 rsRaxMon CPU
 {
     Type = "agent.cpu"
@@ -68,8 +68,8 @@ rsRaxMon CPU
             return new AlarmStatus(OK, 'CPU usage is #{usage_average}%, below your warning threshold of 90%');"
     Ensure = "Present"
 }
-</pre>
-<pre>
+```
+```PoSh
 rsRaxMon Memory
 {
     Type = "agent.memory"
@@ -89,8 +89,8 @@ rsRaxMon Memory
         return new AlarmStatus(OK, 'Memory usage is below your warning threshold of 80%');"
     Ensure = "Present"
 }
-</pre>
-<pre>
+```
+```PoSh
 rsRaxMon Network
 {
     Type = "agent.network"
@@ -121,4 +121,4 @@ rsRaxMon Network
         return new AlarmStatus(OK, 'Network transmit rate on public is below your warning threshold of 56000B/s');"
     Ensure = "Present"
 }
-</pre>
+```
